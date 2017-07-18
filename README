@@ -1,0 +1,22 @@
+Prerequisites
+=============
+Install latest rails framework
+
+In terminal
+===========
+cd /path/to/labview/
+bundle install
+rake db:migrate
+rake db:seed
+bin/rails server
+
+
+
+In browser
+==========
+http://localhost:3000
+
+
+
+
+
