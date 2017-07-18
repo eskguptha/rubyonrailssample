@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Labview</h1>
+<h3>HH 310</h3>
+<h3><%= Time.now.strftime("%m/%d/%Y") %></h3>
+<h3><%= Time.now.strftime("%H:%M") %></h3>
+<table>
+  <tr>
+  <% @computers.each_with_index do |computer, index| %>
+    <% if index%5 == 0 %></tr><tr><tr/><tr><% end %>
+        <td style="text-align:center; width:50px; background-color:<% if computer.status %>green<% else %>red<% end %>;"><%= computer.hostname %></td>
+      </div>
+    </ul>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'Manage Computers', computers_path %>
